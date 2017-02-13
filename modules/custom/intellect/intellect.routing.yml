@@ -1,0 +1,9 @@
+intellect.my_page:
+  path: '/linking_up/page'
+  defaults:
+    _controller: '\Drupal\intellect\Controller\FirstController::linkingUp'
+    _title: 'My first page in Drupal8'
+  requirements: 
+    _permission: 'access content'
+
+    

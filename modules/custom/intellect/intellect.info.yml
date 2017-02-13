@@ -1,0 +1,6 @@
+name: Intellectslinkup
+description: An module to build our basic functionality.
+package: Custom
+type: module
+version: 1.0
+core: 8.x

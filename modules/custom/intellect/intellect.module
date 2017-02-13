@@ -1,0 +1,32 @@
+<?php 
+function intellect_menu() {
+  // The paths given here need to match the ones in example.routing.yml exactly.
+  $items['/mypage/page'] = array(
+    'title' => 'First page',
+    'description' => 'This is a example page.',
+    // The name of the route from example.routing.yml
+    'route' => 'intellect.my_page',
+  );
+  
+  return $items;
+}
+
+function get_student_age($age)
+{
+	
+	//$dob = $user->field_age->value;
+	    $dob=1986-02-05;
+        $now = time();
+        $then = strtotime($dob);
+
+        $diff = date('Y', $now) - date('Y', $then);
+
+        if($diff < 0)      /* ideally you want to prevent this from happening */
+           echo '??? - negative age.';
+
+        if(($diff > 0) && (date('z',$now) < date('z',$then)))
+           $diff --;
+$user[0]['value'] = $diff;
+return $user[0]['value'];
+}
+

@@ -1,0 +1,11 @@
+name: Age Field
+type: module
+description: Provides a very simple user interface from where users can calculate their age.
+# core: 8.x
+package: Custom
+
+# Information added by Drupal.org packaging script on 2016-09-17
+version: '8.x-1.0'
+core: '8.x'
+project: 'age_field'
+

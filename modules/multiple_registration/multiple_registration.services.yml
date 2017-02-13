@@ -1,0 +1,5 @@
+services:
+
+  multiple_registration.service:
+    class: Drupal\multiple_registration\AvailableUserRolesService
+    arguments: [@entity.manager]

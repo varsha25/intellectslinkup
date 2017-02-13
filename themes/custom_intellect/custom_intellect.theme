@@ -1,0 +1,40 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+function custom_intellect_preprocess_page(&$variables) { 
+    $variables['#attached']['library'][] = 'custom_intellect/slider';
+  
+}
+function custom_intellect_theme_suggestions_user_alter(array &$suggestions,array $variables) {
+
+
+
+  /*$suggestions[] =  'user__' . $variables['element']['#user']->id();*/
+
+
+  return $suggestions;
+
+  
+
+}
+
+function custom_intellect_preprocess_user(&$variables) {
+  /** @var User $account */
+  $account = $variables['elements']['#user'];
+$variables['pingpong'] = "asdasdasd";
+$variables['user_address'] = "Varsha address";
+ // $variables['username1'] = $account->getDisplayName();
+
+
+  //echo $account->protected['uid']['x-default']; die('@@@@@@@@@@');
+  //print "<pre>";  print_r($account);  print "</pre>";
+
+
+
+
+
+}
